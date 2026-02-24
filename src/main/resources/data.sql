@@ -1,5 +1,5 @@
 -- Очистка (опционально, для повторного запуска)
-TRUNCATE TABLE booking, room, hotel, authorities, our_user RESTART IDENTITY CASCADE;
+-- TRUNCATE TABLE booking, room, hotel, authorities, our_user RESTART IDENTITY CASCADE;
 
 -- Вставка данных в таблицу our_user
 INSERT INTO our_user (name, email_address, password)

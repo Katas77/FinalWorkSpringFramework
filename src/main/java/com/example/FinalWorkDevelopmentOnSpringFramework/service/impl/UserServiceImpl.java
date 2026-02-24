@@ -46,6 +46,7 @@ public class UserServiceImpl implements UserService {
             throw new IllegalArgumentException(" RoleType must not be null");
         }
         Role role = Role.from(roleType);
+        role.setUser(user);
         user.setRoles(Collections.singletonList(role));
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         role.setUser(user);

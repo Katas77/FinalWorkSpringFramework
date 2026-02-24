@@ -1,1 +1,1 @@
-create schema  app_schema;
+CREATE SCHEMA IF NOT EXISTS ap_schema;

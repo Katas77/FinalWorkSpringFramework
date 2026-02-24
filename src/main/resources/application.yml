@@ -9,7 +9,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/app_db
     username: Hotel
     password: Hotel
-    hikari:
+    Hikari:
       schema: app_schema
       connection-init-sql: CREATE SCHEMA IF NOT EXISTS app_schema
       connection-timeout: 10000
@@ -23,7 +23,7 @@ spring:
     mongodb:
       uri: mongodb://root:root@localhost:27017/appdatabase?authSource=admin
 
-  liquibase:
+  Liquibase:
     enabled: true
     change-log: classpath:db/db.changelog-master.yaml
 
